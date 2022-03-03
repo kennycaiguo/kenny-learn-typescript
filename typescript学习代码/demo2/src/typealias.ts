@@ -14,3 +14,24 @@ function printPoint(pt:Point){
 }
 
 printPoint({x:100,y:200})
+
+type Animal2={
+    name:string
+}
+
+//类型扩展 使用&符号
+type Bear2=Animal2 & {
+  honey:boolean
+}
+
+const b:Bear2={
+    name:"willie",
+    honey:true
+}
+
+function printBearInfo(b:Bear2) {
+    console.log(`Bear[name:${b.name},honey:${b.honey}]`);
+    
+}
+
+printBearInfo(b)
