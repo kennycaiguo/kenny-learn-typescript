@@ -1,0 +1,1 @@
+打开powershell，输入：set-ExecutionPolicy RemoteSigned回车即可
